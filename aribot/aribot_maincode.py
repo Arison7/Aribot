@@ -117,4 +117,4 @@ for f in os.listdir(r"C:\Users\ariso\Desktop\Snake projects\aribot\cogs"):
         client.load_extension(f"cogs.{f[:-3]}")
 
 
-client.run('ODE0MTkwMjM1MzY5NDcyMDIw.YDaPvw.DkRADfHf9yPYXNXxJE9tD5r3AAA')
+client.run('')
