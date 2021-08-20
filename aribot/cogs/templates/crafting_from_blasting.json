@@ -1,0 +1,9 @@
+{
+    "type": "minecraft:blasting",
+    "ingredient": {
+      "item": "modid:item_name_ingrident"
+    },
+    "result": "modid:item_name_result",
+    "experience": 0.35,
+    "cookingtime": 300
+  }

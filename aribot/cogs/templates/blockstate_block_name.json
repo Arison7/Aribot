@@ -1,0 +1,9 @@
+{
+        "variants":{
+            "":{
+                "model":"modid:block/block_name"
+            }
+
+        }
+
+}

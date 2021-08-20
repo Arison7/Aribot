@@ -1,0 +1,14 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+      {
+        "item": "modid:item_name_ingredient0"
+      },
+      {
+        "item": "minecraft:item_name_ingredient1"
+      }
+    ],
+    "result": {
+      "item": "modid:item_name_result"
+    }
+  }

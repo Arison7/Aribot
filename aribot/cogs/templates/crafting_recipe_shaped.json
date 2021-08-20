@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+      "###",
+      " X ",
+      " X "
+    ],
+    "key": {
+      "#": {
+        "item": "modid:item_name_ingredient0"
+      },
+      "X": {
+        "item": "minecraft:item_name_ingridient1" 
+      }
+    },
+    "result": {
+      "item": "modid:item_name_result" 
+    }
+  }

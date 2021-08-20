@@ -1,0 +1,8 @@
+{
+    "item.modid.name": "STRING",
+    "block.modid.name": "STRING",
+    "enchantment.modid.name" : "STRING",
+    "effect.modid.name": "STRING"
+}
+
+

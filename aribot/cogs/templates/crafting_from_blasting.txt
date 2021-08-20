@@ -1,0 +1,30 @@
+First i will need you to give me id of your mod$pls write aribot - id of your mod
+$second will be ammount of expiernce you want this smelting to drop$pls use aribot+number$(use '.' if you want your number to be a float for example 1.02)
+$Thrid  i will need you time required to cook the iteam in miliseconds$pls use aribot+number$(use '.' if you want your number to be a float for example 1.02)
+$Fourth i will need you to give me ingrindient$pls use aribot |ingridient:mc/md$(use mc if it's minecraft item and md if it's item from your mod)
+$lastly what item do you want as result of your crafting$pls use aribot|item_result:mc/md$(use mc if it's minecraft item and md if it's item from your mod)
+!done!
+{
+    "type": "minecraft:blasting",
+    "ingridient": {
+      "item":  "placeholder1:item_name_ingrident"
+    },
+    "result": "placeholder2:item_name_result",
+    "experience": number1,
+    "cookingtime": number2
+  }
+!S!
+if {0}[3][list({0}[3].keys())[0]] == "mc" :
+  {2} = {2}.replace("placeholder1", "minecraft")
+elif {0}[3][list({0}[3].keys())[0]] == "md":
+  {2} = {2}.replace("placeholder1", "modid")
+{2} = {2}.replace("item_name_ingrident",list({0}[3].keys())[0])
+if {0}[4][list({0}[4].keys())[0]] == "mc" :
+  {2} = {2}.replace("placeholder2", "minecraft")
+elif {0}[4][list({0}[4].keys())[0]] == "md":
+  {2} = {2}.replace("placeholder2", "modid")
+{2} = {2}.replace("item_name_result",list({0}[4].keys())[0])
+!R!
+modid,number1,number2
+
+#cooking is ticks and it has to be int

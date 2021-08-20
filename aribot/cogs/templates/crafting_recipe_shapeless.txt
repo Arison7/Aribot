@@ -1,0 +1,27 @@
+First i will need you to give me id of your mod$pls write aribot - id of your mod
+$Second pls give me item that you want to be result of your crafting $pls write aribot |result_of_your_crafting:mc/md$(use mc if it's minecraft item and md if it's item from your mod)
+$lastly pls give me every item you want to use in your resipice$pls write aribot |item1:mc/md,item2:mc/md ....$(use mc if it's minecraft item and md if it's item from your mod)
+!done!
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+    ],
+    "result": {
+      "item": "placeholder:item_name_result"
+    }
+  }
+!S!
+for x in {0}[2].keys():
+  temp = '''{{
+      "item":"modid:item_name_ingredient"
+    }},'''.replace("item_name_ingredient",x)
+  if {0}[2][x] == "mc":
+    temp =  temp.replace("modid","minecraft")
+  {2} = {1}({2},("[","]"), temp)
+if {0}[1][list({0}[1].keys())[0]] == "mc" :
+  {2} = {2}.replace("placeholder", "minecraft")
+elif {0}[1][list({0}[1].keys())[0]] == "md":
+  {2} = {2}.replace("placeholder", "modid")
+{2} = {2}.replace("item_name_result",list({0}[1].keys())[0])
+!R!
+modid

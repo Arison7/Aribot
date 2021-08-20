@@ -1,0 +1,13 @@
+First i will need your modid pls write aribot - your modid
+And lastly i will need name of your block pls write aribot - name of your block
+!done!
+{
+    "parent": "minecraft:block/cube_all",
+    "textures": {
+        "all": "modid:/block_name"
+    }
+
+}
+!R!
+modid,block_name
+
